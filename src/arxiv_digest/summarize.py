@@ -41,8 +41,8 @@ class OpenAICompatibleClient:
 
     def __init__(self) -> None:
         self.api_key = os.environ.get("AD_LLM_API_KEY", "")
-        self.base_url = os.environ.get("AD_LLM_BASE_URL", "https://api.deepseek.com")
-        self.model = os.environ.get("AD_LLM_MODEL", "deepseek-chat")
+        self.base_url = os.environ.get("AD_LLM_BASE_URL", "https://open.bigmodel.cn/api/paas/v4")
+        self.model = os.environ.get("AD_LLM_MODEL", "glm-4-flash")
         self._inner = None
 
     @property

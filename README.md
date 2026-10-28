@@ -25,7 +25,7 @@ arxiv-digest run --include-seen     # 包含已见过的论文
 
 想每天自动跑：把命令挂进任务计划（Windows Task Scheduler）或 cron 即可——本工具本身是单次执行的 CLI，不常驻。
 
-## 管道五步（也是面试讲法）
+## 管道五步
 
 1. **抓取**：arXiv API 按类目 + 提交日期窗口查询（只敢用 `cat:` 查询——自由文本搜索接口限流狠得多）；每类目一请求、间隔 3 秒、尊重 `Retry-After`
 2. **去重**：`digests/state.json` 记录见过的论文 ID，跨运行只报新论文（版本号 `v1/v2` 归一化后再比对）
@@ -35,7 +35,7 @@ arxiv-digest run --include-seen     # 包含已见过的论文
 
 ## 成本
 
-换 DeepSeek 参考价：40 篇 × 约 1.2k token 输入 ≈ 每次运行不到 ¥0.05。
+ DeepSeek 参考价：40 篇 × 约 1.2k token 输入 ≈ 每次运行不到 ¥0.05。
 
 ## 测试与 CI
 

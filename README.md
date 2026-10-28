@@ -35,7 +35,6 @@ arxiv-digest run --include-seen     # 包含已见过的论文
 
 ## 成本
 
-默认 **GLM-4-Flash 为免费模型**（智谱开放平台），本项目量级下零成本。
 换 DeepSeek 参考价：40 篇 × 约 1.2k token 输入 ≈ 每次运行不到 ¥0.05。
 
 ## 测试与 CI
